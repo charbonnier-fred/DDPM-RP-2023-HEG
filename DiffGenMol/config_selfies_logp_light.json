@@ -1,0 +1,35 @@
+{
+    "name": "DiffGenMol-Selfies-LogP",
+    "n_gpu": 1,
+    "save_dir": "saved/",
+
+    "data_loader": {
+        "type": "QM9DataLoaderSelfies",
+        "args":{
+            "dataset_size" : 105625,
+            "batch_size": 16,
+            "num_classes" : 3,
+            "type_property": "LogP",
+            "canonicalize_smiles" : false,
+            "shuffle": true
+        }
+    },
+    "trainer": {
+        "type": "Trainer1D",
+        "args":{
+            "timesteps": 1000,
+            "train_num_steps": 3000,
+            "train_lr": 8e-5,
+            "unet_dim": 16,
+            "unet_channels" : -1,
+            "unet_cond_drop_prob" : 0.5,
+            "eval_and_sample_every" : 1000,
+            "num_samples" : 20,
+            "num_samples_final_eval" : 30,
+            "objective" : "pred_noise",
+            "beta_schedule" : "cosine",
+            "amp" : true,
+            "tensorboard" : true
+        }
+    }
+}
