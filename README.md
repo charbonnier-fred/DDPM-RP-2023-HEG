@@ -1,7 +1,7 @@
 # Learning to generate molecules
 
 Repository created by Frédéric Charbonnier & Joel Clerc of the Master in Information Sciences research project "Learning to generate molecules" at the Haute école de gestion de Genève.  
-More details in the [project poster](https://github.com/charbonnier-fred/DDPM-RP-2023-HEG/blob/main/Poster_Charbonnier_Clerc.pdf)
+More details in the [project poster](https://github.com/charbonnier-fred/DDPM-RP-2023-HEG/blob/main/Poster_Charbonnier_Clerc.pdf).
 
 ## Annotated diffusion
 
