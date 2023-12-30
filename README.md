@@ -10,6 +10,6 @@ Annotated_diffusion.ipynb notebook is to experiment and implemente the Denoising
 
 DiffGenMol enables a DDPM to be trained simultaneously, unconditionally and conditionally, using training data sets consisting of molecules and their calculated properties. Once the model has been trained, several molecules are generated and different metrics are calculated. 
 
-To start training:
+To start training:  
 cd .\DiffGenMol\
 python train.py
